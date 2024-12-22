@@ -10,7 +10,9 @@
     --light:#8695A4;
     --aliceblue:#EDF7FA;
     --black:#000000;
+    --white:#ffffff;
     --fs-44px : 44px;
+    --fs-33px : 33px;
     --fs-32px : 32px;
     --fs-26px : 26px;
     --fs-22px : 22px;
@@ -65,5 +67,44 @@ img{
 }
 h1{
     font-size: clamp(var(--fs-32px),5vw,var(--fs-44px));
-    color: var(--title-color);
+    font-weight: 700;
+    color: var(--dark);
+}
+/* Utility Classes */
+h2.title{
+    font-size: clamp(var(--fs-24px),5vw,var(--fs-30px));
+    font-weight: 700;
+    color: var(--dark);
+}
+h3.title{
+    font-size: clamp(var(--fs-22px),5vw,var(--fs-26px));
+    font-weight: 700;
+    color: var(--dark);
+}
+p.special-description{
+    font-size: clamp(var(--fs-22px),5vw,var(--fs-26px));
+    font-weight: 700;
+    color: var(--dark);
+}
+p.description{
+    font-size: var(--fs-16px);
+    font-weight: 400;
+    color: var(--dark);
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.grid{
+    display: grid;
+}
+.link-btn{
+    display: inline-block;
+    padding: 10px 15px;
+    border:1px dashed var(--black);
+    border-radius: 2px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    box-shadow: 0 4px 4px 0 rgba(0 0 0 / 0.25);
 }
