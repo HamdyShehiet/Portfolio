@@ -95,7 +95,6 @@ p.description{
 .flex{
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
 }
 .grid{
     display: grid;
@@ -114,4 +113,24 @@ p.description{
 }
 section{
     padding: var(--section-padding) 0;
+}
+section.hero .container{
+    align-items: center;
+    flex-direction: column-reverse;
+    gap: 60px 140px;
+    min-height: 80vh;
+}
+@media (max-width: 991px) {
+    section.hero .container article.col{
+        text-align: center;
+    }
+}
+@media (min-width: 992px) {
+    section.hero .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    section.hero .container article.col{
+        flex-basis: 60%;
+    }
 }
