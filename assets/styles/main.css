@@ -94,7 +94,6 @@ p.description{
 }
 .flex{
     display: flex;
-    justify-content: center;
 }
 .grid{
     display: grid;
@@ -115,8 +114,9 @@ section{
     padding: var(--section-padding) 0;
 }
 section.hero .container{
-    align-items: center;
     flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
     gap: 60px 140px;
     min-height: 80vh;
 }
