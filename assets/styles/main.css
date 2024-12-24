@@ -100,6 +100,9 @@ span.title{
     font-size: var(--fs-22px);
     color: var(--dark);
 }
+.text-center{
+    text-align: center;
+}
 .flex{
     display: flex;
 }
@@ -179,7 +182,8 @@ header .container nav ul li a{
         color: var(--dark);
     }
 }
-section{
+section,
+footer{
     padding: var(--section-padding);
 }
 section.hero .container{
@@ -280,3 +284,11 @@ section.hero .container{
         flex-direction: column;
     }
 }
+/* footer {
+    border-top: 1px solid var(--dark);
+}
+footer .container .social-links{
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+} */
